@@ -11,12 +11,9 @@
     "url": "git+https://github.com/ZeroDragon/HumanElapsed.git"
   },
   "keywords": [
-    "Human",
-    "elapsed",
-    "time",
+    "Human elapsed time",
     "timeago",
-    "time",
-    "ago",
+    "time ago",
     "elapsed",
     "time"
   ],
@@ -25,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/ZeroDragon/HumanElapsed/issues"
   },
-  "homepage": "https://github.com/ZeroDragon/HumanElapsed#readme"
+  "homepage": "https://github.com/ZeroDragon/HumanElapsed#readme",
+  "devDependencies": {
+    "consolecolors": "^0.33.2-b"
+  }
 }

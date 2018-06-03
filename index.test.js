@@ -1,4 +1,5 @@
-const secondsToElapsed = require('./secondsToElapsed')
+require('consolecolors')
+const HumanToElapsed = require('./index')
 
 const tests = [
   [
@@ -38,26 +39,41 @@ const tests = [
   ]
 ]
 
-tests
+const execution = tests
   .map(([desc, test, expected]) => {
     return {
       desc,
-      pass: secondsToElapsed(test) === expected,
-      result: secondsToElapsed(test),
+      pass: HumanToElapsed(test) === expected,
+      result: HumanToElapsed(test),
       expected
     }
   })
   .map(itm => {
-    const retval = [`${itm.pass ? '[PASS]' : '[FAIL]'} ${itm.desc}`]
+    const retval = `${'✔'.green} ${itm.desc.blue}`
     if (itm.pass) {
-      return retval.join('')
+      return [null, retval]
     } else {
-      retval.push(`
-        ${itm.result} !== ${itm.expected}
-      `)
+      return [
+        [
+          itm.desc.blue,
+          `expected: ${itm.expected}`.green,
+          `returned: ${itm.result}`.red
+        ].join('\n  - '),
+        null
+      ]
     }
-    return retval.join(' ')
   })
-  .forEach(itm => {
-    console.log(itm)
+
+execution
+  .filter(([fail]) => !fail)
+  .forEach(([,success]) => {
+    console.log(success.green)
   })
+
+const fail = execution.filter(([fail]) => fail)
+
+fail.forEach(([fail]) => {
+  console.error(`${`✗`.red} ${fail}`)
+})
+
+process.exit(fail.length)
