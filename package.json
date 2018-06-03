@@ -25,5 +25,6 @@
   "homepage": "https://github.com/ZeroDragon/HumanElapsed#readme",
   "devDependencies": {
     "consolecolors": "^0.33.2-b"
-  }
+  },
+  "runkitExampleFilename": "index.test.js"
 }

@@ -3,6 +3,9 @@ HumanElapsed
 
 A small module that translates seconds to elapsed (human) time 
 
+## Try it in your browser
+Just go to [Runkit](https://npm.runkit.com/human-elapsed) and click run
+
 ## Usage
 
 ´´´
