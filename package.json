@@ -1,6 +1,6 @@
 {
   "name": "human-elapsed",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A small module that translates seconds to elapsed (human) time",
   "main": "index.js",
   "scripts": {
