@@ -48,13 +48,13 @@ const execution = tests
     }
   })
   .map(itm => {
-    const retval = `${'✔'} ${itm.desc.blue}`
+    const retval = `${'✔'} ${itm.desc}`
     if (itm.pass) {
       return [null, retval]
     } else {
       return [
         [
-          itm.desc.blue,
+          itm.desc,
           `expected: ${itm.expected}`,
           `returned: ${itm.result}`
         ].join('\n  - '),
