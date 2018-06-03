@@ -1,7 +1,7 @@
 HumanElapsed  
 ======================  
 
-A small js script that translates seconds to elapsed (human) time 
+A small module that translates seconds to elapsed (human) time 
 
 ## Usage
 

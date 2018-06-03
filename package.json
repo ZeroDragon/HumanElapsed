@@ -1,0 +1,29 @@
+{
+  "name": "human-elapsed",
+  "version": "1.0.0",
+  "description": "A small module that translates seconds to elapsed (human) time",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZeroDragon/HumanElapsed.git"
+  },
+  "keywords": [
+    "Human",
+    "elapsed",
+    "time",
+    "timeago",
+    "time",
+    "ago",
+    "elapsed",
+    "time"
+  ],
+  "author": "ZeroDragon <npm@zerothedragon.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZeroDragon/HumanElapsed/issues"
+  },
+  "homepage": "https://github.com/ZeroDragon/HumanElapsed#readme"
+}
